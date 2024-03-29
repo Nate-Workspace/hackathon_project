@@ -1,25 +1,27 @@
-import { LeftNav } from './components/LeftNav'
-import {BrowserRouter as Router,Routes, Route} from "react-router-dom"
-import Sell from './components/Sell'
+import { useState } from "react";
+import { LeftNav } from "./components/LeftNav";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Dashboard from "./pages/Dashboard";
+import ProductsServicesEvents from "./pages/ProductsServicesEvents";
+import Seller from "./pages/Seller";
 
 function App() {
-
   return (
-    <div className='App'>
+    <div className="App">
       <Router>
-        <LeftNav/>
+        <LeftNav />
         <Routes>
-          <Route path='/'/>
-          <Route path='/Explore'/>
-          <Route path='/Saved'/>
-          <Route path='/Cart'/>
-          <Route path='/Notification'/>
-          <Route path='/Create'/>
-          <Route path='/sell' element={<Sell />}/>
+          <Route path="/" element={<Home />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/product" element={<ProductsServicesEvents />} />
+          <Route path="/seller" element={<Seller />} />
+          <Route path="/buyer" element={<Buyer />} />
+
         </Routes>
       </Router>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
