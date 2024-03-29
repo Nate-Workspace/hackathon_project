@@ -4,20 +4,20 @@
   top: 0;
   width: 200px;
   height: 100%;
-  background-color: #F3F3F3;
-  color: #77D0B0;
+  background-color: #f3f3f3;
+  color: #77d0b0;
   overflow: hidden;
 }
 
-.logo{
-    width: max-content;
-    height: max-content;
-    margin: 30px 0 50px;
-    font-size: 40px;
-    padding-left: 40px;
+.logo {
+  width: max-content;
+  height: max-content;
+  margin: 30px 0 50px;
+  font-size: 40px;
+  padding-left: 40px;
 }
 
-.links{
+.links {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -28,7 +28,7 @@
   margin-top: 40px;
 }
 
-.links a{
+.links a {
   color: #535252;
   text-decoration: none;
   flex-basis: 8%;
@@ -36,5 +36,5 @@
   padding: 20px 0 20px 40px;
 }
 .links a:hover {
-  background-color: #77D0B0;
+  background-color: #77d0b0;
 }

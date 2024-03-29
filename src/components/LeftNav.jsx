@@ -1,4 +1,3 @@
-import React from 'react'
 import './LeftNav.css'
 import { Link } from 'react-router-dom'
 
@@ -14,6 +13,7 @@ export const LeftNav = () => {
         <Link to="/Cart"> Cart </Link>
         <Link to="/Notification"> Notification </Link>
         <Link to="/Create"> Create </Link> 
+        <Link to="/sell"> Sell </Link> 
       </div>
     </div>
   )
