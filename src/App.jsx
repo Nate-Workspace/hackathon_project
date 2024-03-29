@@ -1,6 +1,5 @@
 import { LeftNav } from './components/LeftNav'
 import {BrowserRouter as Router,Routes, Route} from "react-router-dom"
-import Sell from './components/Sell'
 
 function App() {
 
@@ -10,12 +9,12 @@ function App() {
         <LeftNav/>
         <Routes>
           <Route path='/'/>
-          <Route path='/Explore'/>
-          <Route path='/Saved'/>
-          <Route path='/Cart'/>
-          <Route path='/Notification'/>
+          <Route path='/Products'/>
+          <Route path='/Services'/>
+          <Route path='/Events'/>
+          <Route path='/Buyer'/>
+          <Route path='/Seller'/>
           <Route path='/Create'/>
-          <Route path='/sell' element={<Sell />}/>
         </Routes>
       </Router>
     </div>
