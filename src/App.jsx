@@ -14,7 +14,7 @@ function App() {
           <Route path='/Services'/>
           <Route path='/Events'/>
           <Route path='/Buyer' element={<Buyer />}/>
-          <Route path='/Seller'/>
+          <Route path='/Seller'  />
           <Route path='/Create'/>
         </Routes>
       </Router>
