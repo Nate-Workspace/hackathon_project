@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-
-function Toprated() {
+import { FaCaretLeft, FaCaretRight } from 'react-icons/fa';
+function topRatedProducts() {
   const [topRatedProducts, setTopRatedProducts] = useState([]);
   const [scrollLeft, setScrollLeft] = useState(0);
 
@@ -24,14 +24,14 @@ function Toprated() {
   };
 
   return (
-    <div className="bg-gray-200">
-      <h1 className="text-3xl text-green-600 font-bold mb-8 mt-8 ml-8">Top Rated</h1>
+    <div className=" p-8 ml-60">
+      <h1 className="text-2xl text-green-600 font-bold mb-8 mt-8 ml-8">Top Rated</h1>
       <div className="flex items-center justify-center space-x-4">
         <button
           className="px-4 py-2 border rounded-lg focus:outline-none bg-slate-200"
           onClick={() => scrollContainer(-100)}
         >
-          &lt;
+         <FaCaretLeft />
         </button>
         <div
           id="scroll-content"
@@ -55,11 +55,11 @@ function Toprated() {
           className="px-4 py-2 border rounded-lg focus:outline-none bg-slate-200"
           onClick={() => scrollContainer(100)}
         >
-          &gt;
+          <FaCaretRight />
         </button>
       </div>
     </div>
   );
 }
 
-export default Toprated;
+export default topRatedProducts;
