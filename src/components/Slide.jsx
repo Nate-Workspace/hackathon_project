@@ -33,7 +33,7 @@ function Slide() {
                 <p className="text-center ">{d.hostName}</p>
                 <p className="text-center">{d.deadline}</p>
               </div>
-              "
+              
             </div>
           ))}
         </Slider>

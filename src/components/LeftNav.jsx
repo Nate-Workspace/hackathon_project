@@ -12,7 +12,7 @@ import {
 } from "phosphor-react";
 
 export const LeftNav = () => {
-  const [activeLink, setActiveLink] = useState(null);
+  const [activeLink, setActiveLink] = useState(0);
 
   const handleClick = (index) => {
     setActiveLink(index);
