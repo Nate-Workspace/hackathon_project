@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.slick-slide > div {
+  margin: 0 10px;
+}
 
 :root {
    --Green-text-color: #11875C;  /* For Green texts */
@@ -16,3 +19,5 @@
    font-weight: 600;
    color: var(--Green-text-color);
 }
+
+

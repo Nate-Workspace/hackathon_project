@@ -1,6 +1,8 @@
 import { LeftNav } from './components/LeftNav';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Dashboard from './pages/Dashboard';
+import Buyer from './pages/Buyer';
+
 
 function App() {
   return (
@@ -15,7 +17,7 @@ function App() {
             <Route path='/Products' />
             <Route path='/Services' />
             <Route path='/Events' />
-            <Route path='/Buyer' />
+            <Route path='/Buyer' element={<Buyer />}/>
             <Route path='/Seller' />
             <Route path='/Create' />
           </Routes>
