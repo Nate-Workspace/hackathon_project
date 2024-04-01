@@ -1,3 +1,4 @@
+import React from 'react';
 import "./LeftNav.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -10,6 +11,7 @@ import {
   Tag,
   Compass,
 } from "phosphor-react";
+
 
 export const LeftNav = () => {
   const [activeLink, setActiveLink] = useState(0);
