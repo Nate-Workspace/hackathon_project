@@ -1,24 +1,102 @@
 import React from 'react';
-import './LeftNav.css';
-import { Link } from 'react-router-dom';
+import "./LeftNav.css";
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import {
+  House,
+  Bag,
+  Gear,
+  Calendar,
+  ShoppingBag,
+  Tag,
+  Compass,
+} from "phosphor-react";
+
 
 export const LeftNav = () => {
+  const [activeLink, setActiveLink] = useState(0);
+
+  const handleClick = (index) => {
+    setActiveLink(index);
+  };
   return (
     <div className="navbar">
-      <div className="logo">PROJ</div>
-      <hr />
-      <div className='links'>
-        <Link to="/"> Home </Link>
-        <Link to="/Explore"> Explore </Link>
-        <div className="product-service-event-links">
-          <Link to="/product"> Products </Link>
-          <Link to="/service"> Services </Link>
-          <Link to="/event"> Events </Link>
-        </div>
-        <Link to="/Saved"> Saved </Link>
-        <Link to="/Cart"> Cart </Link>
-        <Link to="/Notification"> Notification </Link>
-        <Link to="/Create"> Create </Link> 
+      <div className="logo">Logo</div>
+      {/* <hr /> */}
+      <div className="links">
+        <p className="Topic">Primary</p>
+        <Link
+          to="/"
+          className={activeLink === 0 ? "active" : ""}
+          onClick={() => handleClick(0)}
+        >
+          <div>
+            <House size={18} />
+            <p>Dashboard</p>
+          </div>
+        </Link>
+        <p className="Topic">Explore</p>
+        <Link
+          to="/Products"
+          className={activeLink === 1 ? "active" : ""}
+          onClick={() => handleClick(1)}
+        >
+          <div>
+            <ShoppingBag size={18} />
+            <p>Products</p>
+          </div>
+        </Link>
+        <Link
+          to="/Service"
+          className={activeLink === 2 ? "active" : ""}
+          onClick={() => handleClick(2)}
+        >
+          <div>
+            <Gear size={18} />
+            <p>Services</p>
+          </div>
+        </Link>
+        <Link
+          to="/Events"
+          className={activeLink === 3 ? "active" : ""}
+          onClick={() => handleClick(3)}
+        >
+          <div>
+            <Calendar size={18} />
+            <p>Events</p>
+          </div>
+        </Link>
+        <p className="Topic">Mode</p>
+        <Link
+          to="/Buyer"
+          className={activeLink === 4 ? "active" : ""}
+          onClick={() => handleClick(4)}
+        >
+          <div>
+            <Bag size={18} />
+            <p>Buyer</p>
+          </div>
+        </Link>
+        <Link
+          to="/Seller"
+          className={activeLink === 5 ? "active" : ""}
+          onClick={() => handleClick(5)}
+        >
+          <div>
+            <Tag size={18} />
+            <p>Seller</p>
+          </div>
+        </Link>
+        <Link
+          to="/Create"
+          className={activeLink === 6 ? "active" : ""}
+          onClick={() => handleClick(6)}
+        >
+          <div>
+            <Compass size={18} />
+            <p>Create</p>
+          </div>
+        </Link>
       </div>
     </div>
   );

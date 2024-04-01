@@ -1,29 +1,35 @@
 import { useState } from 'react'
-import { LeftNav } from './components/LeftNav'
-import {BrowserRouter as Router,Routes, Route} from "react-router-dom"
 import Product from './Pages/Product'
 import Service from './Pages/Service'
 import Event from './Pages/Event'
-function App() {
 
+import { LeftNav } from './components/LeftNav';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Dashboard from './pages/Dashboard';
+import Buyer from './pages/Buyer';
+
+
+function App() {
   return (
-    <div className='App'>
+    <div className='App flex'>
       <Router>
-        <LeftNav/>
-        <Routes>
-          <Route path='/'/>
-          <Route path='/Explore'/>
-          <Route path="/product" element={<Product />} />
-          <Route path="/service" element={<Service />} />
-          <Route path="/event" element={<Event />} />
-          <Route path='/Saved'/>
-          <Route path='/Cart'/>
-          <Route path='/Notification'/>
-          <Route path='/Create'/>
-        </Routes>
+        <div className="h-screen" style={{ width: '200px' }}>
+          <LeftNav />
+        </div>
+        <div className='flex-1'>
+          <Routes>
+            <Route path='/' element={<Dashboard />} />
+            <Route path='/Products' element={<Product />}/>
+            <Route path='/Services' element={<Service />}/>
+            <Route path='/Events' element={<Event />}/>
+            <Route path='/Buyer' element={<Buyer />}/>
+            <Route path='/Seller' />
+            <Route path='/Create' />
+          </Routes>
+        </div>
       </Router>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

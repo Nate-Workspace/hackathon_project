@@ -4,20 +4,21 @@
   top: 0;
   width: 200px;
   height: 100%;
-  background-color: #F3F3F3;
-  color: #77D0B0;
-  overflow-y: auto;
+  background-color: #f3f3f3;
+  overflow: hidden;
 }
 
-.logo{
-    width: max-content;
-    height: max-content;
-    margin: 30px 0 50px;
-    font-size: 40px;
-    padding-left: 40px;
+.logo {
+  width: max-content;
+  height: max-content;
+  margin: 20px 0px 60px;
+  font-size: 32px;
+  padding-left: 30px;
+  font-weight: 600;
+  color: var(--Green-text-color);
 }
 
-.links{
+.links {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -28,17 +29,34 @@
   
 }
 
-.links a{
-  color: #535252;
+.links a {
+  color: var(--Green-text-color);
   text-decoration: none;
   flex-basis: 8%;
   width: 100%;
   padding: 20px 0 20px 40px;
+
+  font-weight: 500;
 }
-.links a:hover {
-  background-color: #77D0B0;
+.links a div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 7px;
 }
-.product-service-event-links a {
+.links a div p {
+  font-size: 16px;
+}
+.Topic {
+  padding-top: 10px;
+  padding-left: 30px;
+  font-weight: 500;
+}
+.links a.active {
+  background-color: #77d0b0;
+  color: black;
+}
+/* .product-service-event-links a {
 
   padding: 10px;
   margin-left: 60px;
@@ -47,4 +65,5 @@
 .product-service-event-links {
   display: flex;
   flex-direction: column;
-}
+} */
+
