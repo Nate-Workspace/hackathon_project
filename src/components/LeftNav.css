@@ -26,7 +26,7 @@
   flex-direction: column;
   width: 100%;
   overflow: hidden;
-  margin-top: 40px;
+  
 }
 
 .links a {
@@ -56,3 +56,14 @@
   background-color: #77d0b0;
   color: black;
 }
+/* .product-service-event-links a {
+
+  padding: 10px;
+  margin-left: 60px;
+  
+}
+.product-service-event-links {
+  display: flex;
+  flex-direction: column;
+} */
+
