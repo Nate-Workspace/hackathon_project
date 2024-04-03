@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import LatestPost from "../components/LatestPost";
 import { fetchPosts } from "../components/PostsData";
 import Orders from "../components/Orders";
-import OrderDetails from "../components/OrderDetails";
+import OrderDetails from "../components/Orderdetails";
 
 function Seller() {
   const [posts, setPosts] = useState([]);

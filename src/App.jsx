@@ -5,9 +5,10 @@ import Event from './Pages/Event'
 
 import { LeftNav } from './components/LeftNav';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Dashboard from './pages/Dashboard';
-import Buyer from './pages/Buyer';
-import Seller from "./pages/Seller";
+import Dashboard from './Pages/Dashboard';
+import Buyer from './Pages/Buyer';
+import Seller from "./Pages/Seller";
+import SingleItem from './components/Singleltem.jsx';
 
 
 
@@ -27,6 +28,7 @@ function App() {
             <Route path='/Buyer' element={<Buyer />}/>
             <Route path='/Seller' element={<Seller />} />
             <Route path='/Create' />
+            <Route path='/product/details/:id' element={<SingleItem />} />
           </Routes>
         </div>
       </Router>
