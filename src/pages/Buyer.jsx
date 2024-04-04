@@ -1,6 +1,6 @@
 import PendingOrders from "../components/PendingOrders/PendingOrders";
 import Slide from "../components/Slide";
-const Buyer =()=>{
+export default function Buyer() {
   return (
     <div className="caret-lime-400">
       <Slide />
@@ -8,5 +8,3 @@ const Buyer =()=>{
     </div>
   );
 }
-
-export default Buyer;

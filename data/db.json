@@ -1,0 +1,82 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Product 1",
+      "description": "Description of Product 1",
+      "price": 10.99,
+      "category": "Category 1",
+      "type": "product",
+      "ownerUsername": "user1",
+      "postDate": "2024-04-04",
+      "rating": 4.5,
+      "postTime": "12:00 PM",
+      "image": "/assets/Images/lifebuoy.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Product 2",
+      "description": "Description of Product 2",
+      "price": 19.99,
+      "category": "Category 2",
+      "type": "product",
+      "ownerUsername": "user2",
+      "postDate": "2024-04-03",
+      "rating": 3.8,
+      "postTime": "10:00 AM",
+      "image": "/assets/Images/pc.jpg"
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "name": "Service 1",
+      "description": "Description of Service 1",
+      "type": "service",
+      "category": "Category 1",
+      "ownerUsername": "user3",
+      "postDate": "2024-04-02",
+      "rating": 4.2,
+      "image": "/assets/Images/pcservice.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Service 2",
+      "description": "Description of Service 2",
+      "type": "service",
+      "category": "Category 2",
+      "ownerUsername": "user4",
+      "postDate": "2024-04-01",
+      "rating": 3.9,
+      "image": "/assets/Images/earphoneservice.jpg"
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "Event 1",
+      "description": "Description of Event 1",
+      "ownerUsername": "user5",
+      "eventDate": "2024-05-01",
+      "eventTime": "6:00 PM",
+      "postDate": "2024-04-05",
+      "postTime": "3:00 PM",
+      "place": "Location 1",
+      "eventHostName": "Host 1",
+      "image": "/assets/Images/event1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Event 2",
+      "description": "Description of Event 2",
+      "ownerUsername": "user6",
+      "eventDate": "2024-06-01",
+      "eventTime": "7:00 PM",
+      "postDate": "2024-04-06",
+      "postTime": "4:00 PM",
+      "place": "Location 2",
+      "eventHostName": "Host 2",
+      "image": "/assets/Images/event2.jpg"
+    }
+  ]
+}
